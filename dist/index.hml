@@ -1,0 +1,49 @@
+
+            <!DOCTYPE html>
+        <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="ie=edge">
+            <title>[object Object]</title>
+            <link href="https://fonts.googleapis.com/css?family=Bebas+Neue&display=swap" rel="stylesheet">
+            <style>
+            
+            </style>
+        </head>
+        <body>
+            <div class="banner-bar">
+                <h1>[object Object]</h1>
+            </div>
+            <div class="card-container">
+            
+                <div class="member-card">
+                    <div class="card-top">
+                        <h2>a</h2>
+                        <h2>undefined</h2>
+                    </div>
+                    <div class="card-bottom">
+                        <p>Employee ID: </p>
+                        <p>Email: <a href="mailto:"></a>></p>
+                
+                </div>
+                </div>
+                
+                <div class="member-card">
+                    <div class="card-top">
+                        <h2>a</h2>
+                        <h2>undefined</h2>
+                    </div>
+                    <div class="card-bottom">
+                        <p>Employee ID: </p>
+                        <p>Email: <a href="mailto:"></a>></p>
+                
+                    <p>School: a</p>
+                    
+                </div>
+                </div>
+                
+            </div>
+            </body>
+            </html>
+            
