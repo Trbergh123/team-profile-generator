@@ -1,6 +1,5 @@
 # Team Profil Generator
-'
-'
+Link to youtube video. https://youtu.be/YcCcCgccChY
 ## Description
 A project using node.js to generator a readme file for github
 ## Table of Contents
