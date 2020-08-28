@@ -247,7 +247,7 @@ function startHtml() {
                 </nav>
                 <div class="container">
                     <div class="row">`;
-    fs.writeFile("./index.html", html, function (err) {
+    fs.writeFile("./dist/index.html", html, function (err) {
         if (err) {
             console.log(err);
         }
@@ -268,9 +268,9 @@ function addMember(member) {
                     <div class="card mx-auto mb-3" style="width: 18rem">
                     <h5 class="card-header">${name}<br /><br />Engineer</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">ID: ${id}</li>
-                        <li class="list-group-item">Email Address: ${email}</li>
-                        <li class="list-group-item">GitHub: ${gitHub}</li>
+                        <li class="list-group-item">ID: ${id}</li><br/>
+                        <li class="list-group-item">Email Address: <a href= ${email}>${email}<a></li><br/>
+                        <li class="list-group-item">GitHub: <a href= ${gitHub}>${gitHub}<a></li><br/>
                     </ul>
                     </div>
                 </div>`;
@@ -280,9 +280,9 @@ function addMember(member) {
                     <div class="card mx-auto mb-3" style="width: 18rem">
                     <h5 class="card-header">${name}<br /><br />Intern</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">ID: ${id}</li>
-                        <li class="list-group-item">Email Address: ${email}</li>
-                        <li class="list-group-item">School: ${school}</li>
+                        <li class="list-group-item">ID: ${id}</li><br/>
+                        <li class="list-group-item">Email Address: <a href =${email}>${email}<a> </li><br/>
+                        <li class="list-group-item">School: ${school}</li><br/>
                     </ul>
                     </div>
                 </div>`;
@@ -292,15 +292,15 @@ function addMember(member) {
                     <div class="card mx-auto mb-3" style="width: 18rem">
                     <h5 class="card-header">${name}<br /><br />Manager</h5>
                     <ul class="list-group list-group-flush">
-                        <li class="list-group-item">ID: ${id}</li>
-                        <li class="list-group-item">Email Address: ${email}</li>
-                        <li class="list-group-item">Office Number: ${officeNum}</li>
+                        <li class="list-group-item">ID: ${id}</li><br/>
+                        <li class="list-group-item">Email Address: <a href= ${email}>${email}<a></li><br/>
+                        <li class="list-group-item">Office Number: ${officeNum}</li><br/>
                     </ul>
                     </div>
-                </div>`
+                </div>`;
         }
         console.log("adding team member");
-        fs.appendFile("./index.html", data, function (err) {
+        fs.appendFile("./dist/index.html", data, function (err) {
             if (err) {
                 return reject(err);
             };
@@ -322,7 +322,7 @@ function finishHtml() {
         </body>
         </html>`;
 
-    fs.appendFile("./index.html", html, function (err) {
+    fs.appendFile("./dist/index.html", html, function (err) {
         if (err) {
             console.log(err);
         };
